@@ -17,6 +17,6 @@ app.delete('/playlists/:id', (req, res) => res.json({response: "delete specific 
 
 app.post('/playlists', (req, res) => res.json({response: "post playlist"})); // Dekel
 
-app.put('/playlist/:id', (req, res)=>res.json({response: "update specific playlist"}));//Moriel
+app.put('/playlists/:id', (req, res)=>res.json({response: "update specific playlist"}));//Moriel
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
