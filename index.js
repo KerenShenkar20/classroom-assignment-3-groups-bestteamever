@@ -13,4 +13,6 @@ app.get('/playlists', (req, res) => res.json({response: "get all playlists"})); 
 
 app.get('/playlists/:id', (req, res) => res.json({response: "get specific playlist"})); // yahli
 
+app.delete('/playlists/:id', (req, res) => res.json({response: "delete specific playlist"})); // David
+
 app.listen(port, () => console.log(`Listening on port ${port}`));
