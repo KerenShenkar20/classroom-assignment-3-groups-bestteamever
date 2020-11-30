@@ -9,4 +9,6 @@ app.get('/', (req, res) => res.json({response: "index route"}));
     Student A writes the route for GET /playlist
     and student B writes the route for PUT /language */
 
+app.get('/playlists', (req, res) => res.json({response: "get all playlists"})); // linoy
+
 app.listen(port, () => console.log(`Listening on port ${port}`));
