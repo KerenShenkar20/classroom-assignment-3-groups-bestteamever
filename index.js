@@ -15,6 +15,6 @@ app.get('/playlists/:id', (req, res) => res.json({response: "get specific playli
 
 app.delete('/playlists/:id', (req, res) => res.json({response: "delete specific playlist"})); // David
 
-app.post('/playlists/:id', (req, res) => res.json({response: "post playlist"})); // Dekel
+app.post('/playlists', (req, res) => res.json({response: "post playlist"})); // Dekel
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
