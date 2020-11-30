@@ -11,6 +11,6 @@ app.get('/', (req, res) => res.json({response: "index route"}));
 
 app.get('/playlists', (req, res) => res.json({response: "get all playlists"})); // linoy
 
-app.get('/albums', (req, res) => res.json({response: "get all albums"})); // yahli
+app.get('/playlists/:id', (req, res) => res.json({response: "get specific playlist"})); // yahli
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
